@@ -1,0 +1,413 @@
+{
+  "id": "7f0e2bdf-4fe9-47ea-a94f-5ba7a1a76c14",
+  "version": "2.0",
+  "name": "Seu Barriga Site",
+  "url": "https://seubarriga.wcaquino.me",
+  "tests": [{
+    "id": "8d2c75ec-d2a3-40f8-bb25-7b3061a47842",
+    "name": "Criar Conta",
+    "commands": [{
+      "id": "d2371c21-9d03-497c-9c81-d9c910794668",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7b33d94-a02d-410f-ad22-6822536bd65b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1954x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8940ea01-de78-457b-8d7c-0cfb830e664b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.caret",
+      "targets": [
+        ["css=.caret", "css:finder"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "231c78d0-97b2-450d-9566-0244ad20834b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar",
+      "targets": [
+        ["linkText=Adicionar", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/addConta')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3efb9878-c498-4cf9-ac2e-1807f5e7fd6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70d9a072-e2c7-4363-83df-5c0168aba09e",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Conta 5"
+    }, {
+      "id": "3cafa813-7790-49b9-a8a6-132a7fb50966",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d56ad4-7c5f-4b02-8fbf-425615e37fdd",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Conta adicionada com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": "Conta adicionada com sucesso!"
+    }]
+  }, {
+    "id": "522e8b9f-f0dc-42d4-bbd0-9ab97f5dc8fb",
+    "name": "Alterar Conta",
+    "commands": [{
+      "id": "12615340-09ab-4391-806f-e842841c5cb3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65daf162-4882-4ba5-9511-77f3be38a6e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1954x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f370cef-78be-4dea-8bdf-41bba917ec43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contas",
+      "targets": [
+        ["linkText=Contas", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Contas')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contas ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc2a7d53-652c-4b96-9bbc-e576dd794c84",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listar",
+      "targets": [
+        ["linkText=Listar", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Listar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/contas')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca5bdb9-ef49-42b5-b816-6ef3188311aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.glyphicon-edit",
+      "targets": [
+        ["css=.glyphicon-edit", "css:finder"],
+        ["xpath=//table[@id='tabelaContas']/tbody/tr/td[2]/a/span", "xpath:idRelative"],
+        ["xpath=//td[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4adece0-518f-4cf0-8e95-cc798d60c056",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c16da21-0d95-4886-90ef-a3ec7c64a8f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Conta Alterada"
+    }, {
+      "id": "a2f57f7e-f627-49bc-905e-5ea807719d1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a227c93-334c-4937-97de-e9a8e577c0b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e651ef1f-e53a-4a6f-8f10-47a5f52005fb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Conta alterada com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": "Conta alterada com sucesso!"
+    }]
+  }, {
+    "id": "01169e35-09d1-4702-a976-2eb51513ba37",
+    "name": "Criar Conta Existente",
+    "commands": [{
+      "id": "fb524937-2bff-4f4c-b689-4b489802cc20",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5665fd5e-410a-468a-9160-3d12c5eef1bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1954x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db35e900-fe1f-4110-a058-199673758d75",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contas",
+      "targets": [
+        ["linkText=Contas", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Contas')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contas ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4b022b-074d-4d0b-9a2b-9fcd91b67dc7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Adicionar",
+      "targets": [
+        ["linkText=Adicionar", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/addConta')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adicionar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8a37903-38a3-41aa-9abc-b75389faf8b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31fd40a5-a7e0-4789-aa06-06e895c80974",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Conta Alterada"
+    }, {
+      "id": "a740d9f6-ed1c-48a5-87fd-8c6862147ea1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a0d51e4-0f36-4f85-8334-55fec387bb4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Já existe uma conta com esse nome!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d500e4ef-2800-4ffa-bd1f-9afde256cc38",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Já existe uma conta com esse nome!')]", "xpath:innerText"]
+      ],
+      "value": "Já existe uma conta com esse nome!"
+    }]
+  }, {
+    "id": "7b8b9b14-a4ec-4218-9dc2-3f5ae7d0deb6",
+    "name": "Deletar Conta",
+    "commands": [{
+      "id": "f87dc51e-611c-49e6-ad52-c71adc63e235",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bdec5a2-dc75-448f-93b6-c46c84b58183",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1954x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de9336d0-a69f-4293-8b86-abd462a81464",
+      "comment": "",
+      "command": "click",
+      "target": "css=.caret",
+      "targets": [
+        ["css=.caret", "css:finder"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48c6e615-ee84-40e0-a4f8-32cd87342b88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listar",
+      "targets": [
+        ["linkText=Listar", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Listar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/contas')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a801d071-931a-4412-a22b-385c4d3451ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.glyphicon-remove-circle",
+      "targets": [
+        ["css=.glyphicon-remove-circle", "css:finder"],
+        ["xpath=//table[@id='tabelaContas']/tbody/tr/td[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fb7d4c0-4241-4f61-a6c2-553fd0dd6127",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Conta removida com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee36087c-de61-49dc-8a0a-649547cc901a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Conta removida com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": "Conta removida com sucesso!"
+    }]
+  }],
+  "suites": [{
+    "id": "1488a660-eb72-4aab-bba7-d5a6eb638753",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://seubarriga.wcaquino.me/"],
+  "plugins": []
+}
