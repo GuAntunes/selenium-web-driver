@@ -17,13 +17,15 @@ public class TesteCampoTreinamento {
 
 	private WebDriver driver;
 	private DSL dsl;
-
+	private CampoTreinamentoPage page;
+	
 	@Before
 	public void before() {
 		driver = new ChromeDriver();
 		driver.manage().window().setSize(new Dimension(1200, 765));
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		dsl = new DSL(driver);
+		page = new CampoTreinamentoPage(driver);
 	}
 
 	@After
@@ -33,7 +35,7 @@ public class TesteCampoTreinamento {
 
 	@Test
 	public void testeTextField() {
-		dsl.escreve("elementosForm:nome", "Teste de escrita");
+		page.setNome("Teste de escrita");
 		Assert.assertEquals("Teste de escrita", dsl.obterValorCampo("elementosForm:nome"));
 	}
 
